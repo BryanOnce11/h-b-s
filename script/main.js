@@ -363,7 +363,8 @@ const animationTimeline = () => {
   // Restart Animation on click
   const replyBtn = document.getElementById("replay");
   replyBtn.addEventListener("click", () => {
-    tl.restart();
+    // tl.restart();
+    location.reload();
   });
 };
 
