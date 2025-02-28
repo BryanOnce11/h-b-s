@@ -343,6 +343,8 @@ const animationTimeline = () => {
 
   const video = document.querySelector(".meme-video");
   const memeText = document.querySelector(".meme-caption");
+  const audio = document.querySelector(".audio");
+
   video.addEventListener("play", () => {
     confetti({
       particleCount: 100,
@@ -365,5 +367,8 @@ const animationTimeline = () => {
   });
 };
 
+const audio = document.querySelector(".audio");
+
 // Run fetch and animation in sequence
 fetchData();
+audio.play();
